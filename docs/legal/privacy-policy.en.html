@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+  <title>Privacy Policy — Dartrak</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #0A0A0B;
+      color: #E7EAEA;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+    .lang { font-size: 0.85rem; margin-bottom: 28px; }
+    .lang a { color: #2FB587; text-decoration: none; }
+    h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 4px; }
+    h2 { font-size: 1.2rem; margin: 40px 0 10px; padding-top: 16px; border-top: 1px solid #1E2224; }
+    h3 { font-size: 1rem; margin: 24px 0 8px; color: #C7CDCE; }
+    p, li { color: #C2C8C9; }
+    a { color: #2FB587; }
+    .updated { color: #6B7274; font-size: 0.9rem; margin: 0 0 28px; }
+    strong { color: #E7EAEA; }
+    code { background: #1A1E1F; padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+    .note { color: #9BA3A5; font-style: italic; }
+    .foot { margin-top: 48px; padding-top: 20px; border-top: 1px solid #1E2224; color: #6B7274; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="lang">🇬🇧 English · <a href="privacy-policy.fr.html">🇫🇷 Lire en français</a></p>
+
+    <h1>Privacy Policy — Dartrak</h1>
+    <p class="updated">Last updated: 2 June 2026</p>
+
+    <p>Dartrak ("the app", "we", "us") is a darts scoring application. This policy explains what data the app handles, where it lives, and your rights over it.</p>
+    <p>Our guiding principle is <strong>local-first, privacy by default</strong>: Dartrak works 100% offline and stores everything on your device. Nothing leaves your phone unless you <em>explicitly</em> choose to sign in and enable cloud sync.</p>
+    <p>We <strong>do not</strong> use any analytics, telemetry, tracking, advertising, or crash-reporting services. We do not sell, rent, or share your data with third parties for marketing.</p>
+
+    <h2>1. What works without any account or network</h2>
+    <p>By default — and forever, if you choose — Dartrak runs entirely on your device:</p>
+    <ul>
+      <li><strong>Game data</strong> (players, scores, match history, statistics) is stored locally in an on-device SQLite database.</li>
+      <li><strong>App settings</strong> (language, display preferences, notification toggle) are stored locally.</li>
+      <li>No internet connection is required and <strong>no data is transmitted</strong> anywhere.</li>
+    </ul>
+    <p>In this default mode, <strong>we collect nothing</strong>, because no data ever reaches us.</p>
+
+    <h2>2. Microphone &amp; voice score entry (optional, on-device)</h2>
+    <p>Dartrak offers optional <strong>voice score entry</strong>. When you enable it, the app uses your device's microphone and speech recognition to transcribe spoken scores (e.g. "treble twenty").</p>
+    <ul>
+      <li>Recognition runs <strong>on your device</strong>. Your voice is <strong>not</strong> recorded, stored, or sent to us or to any third-party server by the app.</li>
+      <li>The microphone is accessed <strong>only</strong> while you are actively using voice entry.</li>
+      <li>You can decline or revoke the microphone permission at any time in your device settings; the rest of the app continues to work normally.</li>
+    </ul>
+    <p class="note">Note: on-device speech recognition is provided by your operating system (Android / iOS). Your device manufacturer's own speech-recognition behaviour is governed by their respective privacy policies.</p>
+
+    <h2>3. Local notifications (optional, on-device)</h2>
+    <p>If you enable reminders in Settings, Dartrak schedules <strong>local, on-device notifications</strong> (a daily streak reminder and an occasional reminder to back up your stats).</p>
+    <ul>
+      <li>These notifications are scheduled entirely on your device. There are <strong>no push tokens, no remote scheduling, and no network activity</strong>.</li>
+      <li>Notification permission is requested <strong>only</strong> when you explicitly turn the feature on — never at first launch.</li>
+      <li>You can disable reminders at any time in Settings or in your device settings.</li>
+    </ul>
+
+    <h2>4. Optional accounts &amp; cloud sync (opt-in only)</h2>
+    <p>Dartrak lets you optionally sign in with <strong>Google</strong> to back up your games and connect with friends. This is entirely <strong>opt-in</strong>: the cloud layer stays inert until you sign in, and signing out returns you to fully local operation.</p>
+    <p>If — and only if — you sign in, the following data is processed by our cloud provider:</p>
+    <ul>
+      <li><strong>Account identity</strong>: the identifier and email address provided by Google sign-in, used solely to create and secure your account.</li>
+      <li><strong>Your game data</strong>: games and statistics you choose to sync, so you can restore them on another device.</li>
+      <li><strong>Friends data</strong>: friend connections and friend requests you create, so the friends feature can function.</li>
+    </ul>
+    <p>Your synced data is <strong>isolated per user</strong> and protected by row-level security (RLS): no other user can read or modify your data.</p>
+    <p>Authentication tokens are stored securely on your device using the operating system's secure storage (Keychain on iOS, Keystore on Android).</p>
+    <h3>Cloud sub-processor</h3>
+    <p>When you enable sync, data is stored and processed by <strong>Supabase</strong>, our hosting and database sub-processor, acting on our behalf under appropriate data-protection terms.</p>
+
+    <h2>5. Data you export or share</h2>
+    <p>Dartrak lets you export or share your own statistics (for example as an image or file) via your device's standard share sheet. Where that data goes is entirely your choice and under your control.</p>
+
+    <h2>6. Your rights (GDPR)</h2>
+    <p>Dartrak is designed to be GDPR-compliant.</p>
+    <ul>
+      <li><strong>Local data</strong>: you control it directly. Deleting the app or clearing its data removes all locally stored information from your device.</li>
+      <li><strong>Synced data</strong> (only if you signed in): you have the right to access, correct, export, and delete your data. You can delete your synced data by deleting your account, after which it is removed from our cloud storage.</li>
+      <li><strong>Legal basis</strong>: where we process synced data, the basis is your consent (the act of signing in and enabling sync), which you may withdraw at any time by signing out and requesting deletion.</li>
+    </ul>
+    <p>To exercise any right, contact us at the address below.</p>
+
+    <h2>7. Children's privacy</h2>
+    <p>Dartrak does not knowingly collect personal data from children. The app contains no ads, no in-app purchases, and no behavioural tracking.</p>
+
+    <h2>8. Data retention</h2>
+    <ul>
+      <li><strong>Local data</strong> remains on your device until you delete it (or uninstall the app).</li>
+      <li><strong>Synced data</strong> is retained while your account exists, and is deleted when you delete your account.</li>
+    </ul>
+
+    <h2>9. Changes to this policy</h2>
+    <p>We may update this policy as the app evolves. Material changes will be reflected by an updated "Last updated" date. Continued use after an update constitutes acceptance of the revised policy.</p>
+
+    <h2>10. Contact</h2>
+    <p>For any privacy question or to exercise your rights:</p>
+    <p><strong>Email:</strong> <a href="mailto:simon.farail@smile.fr">simon.farail@smile.fr</a></p>
+
+    <p class="foot">Dartrak contains no advertising, no in-app purchases, and no tracking. It is free and local-first by design.</p>
+  </div>
+</body>
+</html>
