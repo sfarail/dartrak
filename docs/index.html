@@ -1,60 +1,363 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" data-langs="fr,en" data-lang="fr"
+  data-title-fr="Pixware Studio — Applications mobiles local-first"
+  data-title-en="Pixware Studio — Local-first mobile apps"
+  data-desc-fr="Pixware Studio conçoit, développe et édite des applications mobiles local-first : Dartrak, Grimoire, Multiplico. Sans publicité, sans pistage, gratuites au cœur. Studio indépendant, sud de la France."
+  data-desc-en="Pixware Studio designs, builds and publishes local-first mobile apps: Dartrak, Grimoire, Multiplico. No ads, no tracking, free at the core. Independent studio, southern France.">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="index, follow" />
-  <title>Dartrak — Privacy Policy / Politique de confidentialité</title>
-  <style>
-    :root { color-scheme: dark; }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #0A0A0B;
-      color: #E7EAEA;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      padding: 24px;
-    }
-    .card {
-      max-width: 480px;
-      width: 100%;
-      text-align: center;
-      background: #121516;
-      border: 1px solid #23282A;
-      border-radius: 16px;
-      padding: 40px 32px;
-    }
-    h1 { font-size: 1.6rem; margin: 0 0 8px; }
-    p { color: #9BA3A5; margin: 0 0 28px; }
-    .links { display: flex; flex-direction: column; gap: 12px; }
-    a.btn {
-      display: block;
-      padding: 14px 20px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: 600;
-      background: #1C9C6B;
-      color: #06120D;
-      transition: opacity 0.15s ease;
-    }
-    a.btn:hover { opacity: 0.9; }
-    .foot { margin-top: 28px; font-size: 0.8rem; color: #6B7274; }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pixware Studio — Applications mobiles local-first</title>
+  <meta name="description" content="Pixware Studio conçoit, développe et édite des applications mobiles local-first : Dartrak, Grimoire, Multiplico. Sans publicité, sans pistage, gratuites au cœur. Studio indépendant, sud de la France.">
+  <meta name="theme-color" content="#06060A">
+  <link rel="canonical" href="https://pixware.app/">
+  <link rel="alternate" hreflang="fr" href="https://pixware.app/">
+  <link rel="alternate" hreflang="en" href="https://pixware.app/">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/img/favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pixware Studio">
+  <meta property="og:title" content="Pixware Studio — Applications mobiles local-first">
+  <meta property="og:description" content="Dartrak, Grimoire, Multiplico : des apps sans publicité ni pistage, qui gardent vos données sur votre téléphone.">
+  <meta property="og:url" content="https://pixware.app/">
+  <meta property="og:image" content="https://pixware.app/assets/img/og.png">
+  <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta property="og:locale" content="fr_FR"><meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="assets/fonts/Syne-400-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <script src="assets/js/lang.js"></script>
+  <script src="assets/js/site.js" defer></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Pixware Studio","url":"https://pixware.app/","logo":"https://pixware.app/assets/img/icon-512.png","email":"contact@pixware.app","address":{"@type":"PostalAddress","addressCountry":"FR"},"knowsAbout":["Android","mobile applications","local-first software"]}
+  </script>
 </head>
 <body>
-  <main class="card">
-    <h1>Dartrak</h1>
-    <p>Privacy Policy · Politique de confidentialité</p>
-    <div class="links">
-      <a class="btn" href="legal/privacy-policy.en.html">Read in English</a>
-      <a class="btn" href="legal/privacy-policy.fr.html">Lire en français</a>
+  <div id="preloader" aria-hidden="true">
+    <div class="pre-grid">
+      <i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i class="off"></i>
+      <i style="--i:3"></i><i class="off"></i><i class="off"></i><i style="--i:4"></i>
+      <i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i class="off"></i>
+      <i style="--i:8"></i><i class="off"></i><i class="off"></i><i style="--i:9"></i>
     </div>
-    <p class="foot">Local-first · no ads · no tracking</p>
+  </div>
+
+  <a class="sr-only" href="#main"><span lang="fr">Aller au contenu</span><span lang="en">Skip to content</span></a>
+  <div id="progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Pixware Studio"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect class="px" style="--i:0;--dx:-2;--dy:-1" x="4" y="4" width="13" height="13" rx="2.5"/><rect class="px" style="--i:1;--dx:0;--dy:-2" x="19" y="4" width="13" height="13" rx="2.5"/><rect class="px" style="--i:2;--dx:2;--dy:-1" x="34" y="4" width="13" height="13" rx="2.5"/><rect class="px" style="--i:3;--dx:-2;--dy:0" x="4" y="19" width="13" height="13" rx="2.5"/><rect class="px" style="--i:4;--dx:2;--dy:0" x="47" y="19" width="13" height="13" rx="2.5"/><rect class="px" style="--i:5;--dx:-2;--dy:1" x="4" y="34" width="13" height="13" rx="2.5"/><rect class="px" style="--i:6;--dx:0;--dy:2" x="19" y="34" width="13" height="13" rx="2.5"/><rect class="px" style="--i:7;--dx:2;--dy:1" x="34" y="34" width="13" height="13" rx="2.5"/><rect class="px" style="--i:8;--dx:-1;--dy:2" x="4" y="49" width="13" height="13" rx="2.5"/><rect class="px lime" style="--i:9;--dx:1;--dy:2" x="47" y="49" width="13" height="13" rx="2.5"/></svg><span class="brand-word" aria-hidden="true"><span class="brand-pix"><i>P</i><i>i</i><i>x</i><i>w</i><i>a</i><i>r</i><i>e</i></span><span class="brand-studio"><i>S</i><i>t</i><i>u</i><i>d</i><i>i</i><i>o</i></span></span><span class="brand-scan" aria-hidden="true"></span></a>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation">
+      <ul>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#apps">Apps</a></li>
+        <li><a href="#documents">Documents</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-right">
+      <div class="lang-switch" role="group" aria-label="Langue / Language">
+        <button type="button" data-lang-btn="fr" aria-pressed="true">FR</button>
+        <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas id="hero-canvas" class="pixel-field" aria-hidden="true"></canvas>
+      <aside class="hero-side hero-fade d2" aria-hidden="true">
+        <span lang="fr">Fondé en 2026<br><b>Sud de la France</b><br>Android · iOS à venir</span>
+        <span lang="en">Est. 2026<br><b>Southern France</b><br>Android · iOS coming</span>
+      </aside>
+      <div class="container hero-inner">
+        <p class="eyebrow hero-fade">
+          <span lang="fr" data-scramble="1100">Studio indépendant — Sud de la France</span>
+          <span lang="en" data-scramble="1100">Independent studio — Southern France</span>
+        </p>
+        <h1 id="hero-title" class="display hero-title" data-split>Pixware Studio</h1>
+        <div class="hero-bottom">
+          <div>
+            <p class="lead hero-tag hero-fade d1">
+              <span lang="fr">Des applications qui gardent vos données là où elles sont nées : dans votre poche. Sans publicité, sans pistage, gratuites au cœur.</span>
+              <span lang="en">Apps that keep your data where it was born: in your pocket. No ads, no tracking, free at the core.</span>
+            </p>
+            <div class="hero-actions hero-fade d2">
+              <a class="btn btn-primary" href="#apps" data-magnetic="0.25">
+                <span lang="fr">Découvrir les apps</span><span lang="en">Explore the apps</span>
+                <svg class="btn-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8"/></svg>
+              </a>
+              <a class="btn" href="#contact" data-magnetic="0.25"><span lang="fr">Nous écrire</span><span lang="en">Get in touch</span></a>
+            </div>
+          </div>
+          <a class="scroll-cue hero-fade d3" href="#studio"><i></i><span lang="fr">Défiler</span><span lang="en">Scroll</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ MARQUEE ═══ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">Local-first</span>
+        <span class="marquee-item"><span lang="fr">Zéro publicité</span><span lang="en">Zero ads</span></span>
+        <span class="marquee-item"><span lang="fr">Zéro pistage</span><span lang="en">Zero tracking</span></span>
+        <span class="marquee-item"><span lang="fr">Sans compte obligatoire</span><span lang="en">No account required</span></span>
+        <span class="marquee-item"><span lang="fr">Export libre</span><span lang="en">Free export</span></span>
+        <span class="marquee-item">Android</span>
+        <span class="marquee-item"><span lang="fr">Gratuit au cœur</span><span lang="en">Free at the core</span></span>
+        <span class="marquee-item"><span lang="fr">RGPD</span><span lang="en">GDPR</span></span>
+        <span class="marquee-item"><span lang="fr">Fait en France</span><span lang="en">Made in France</span></span>
+      </div>
+    </div>
+
+    <!-- ═══ MANIFESTE ═══ -->
+    <section class="section" id="studio" aria-labelledby="studio-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="reveal">
+            <p class="eyebrow"><span lang="fr">Manifeste</span><span lang="en">Manifesto</span></p>
+            <h2 class="h2" id="studio-title"><span lang="fr">Quatre principes, aucune exception.</span><span lang="en">Four principles, no exceptions.</span></h2>
+          </div>
+          <p class="lead reveal" style="--i:1">
+            <span lang="fr">Chaque application Pixware Studio est conçue autour des mêmes engagements — et ils ne changent pas quand l'argent entre en jeu.</span>
+            <span lang="en">Every Pixware Studio app is built on the same commitments — and they don't change when money enters the picture.</span>
+          </p>
+        </div>
+        <div class="principles reveal" data-stagger>
+          <article class="principle">
+            <span class="num">01</span>
+            <div>
+              <h3>Local-first</h3>
+              <p><span lang="fr">Le téléphone est la source de vérité. L'essentiel fonctionne sans connexion : jouer, cuisiner, apprendre, exporter. Le réseau n'intervient que lorsque vous le demandez.</span><span lang="en">The phone is the source of truth. The essentials work without a connection: play, cook, learn, export. The network only steps in when you ask for it.</span></p>
+            </div>
+          </article>
+          <article class="principle">
+            <span class="num">02</span>
+            <div>
+              <h3><span lang="fr">Zéro pub, zéro pistage</span><span lang="en">Zero ads, zero tracking</span></h3>
+              <p><span lang="fr">Aucun SDK publicitaire, aucune analyse d'audience, aucun rapport de plantage envoyé. Les diagnostics restent sur l'appareil, lisibles par vous.</span><span lang="en">No ad SDK, no analytics, no crash reports phoned home. Diagnostics stay on the device, readable by you.</span></p>
+            </div>
+          </article>
+          <article class="principle">
+            <span class="num">03</span>
+            <div>
+              <h3><span lang="fr">Gratuit au cœur, payant honnête</span><span lang="en">Free core, honest paid</span></h3>
+              <p><span lang="fr">Le cœur de chaque app est gratuit et le restera. Le payant finance ce qui nous coûte réellement — jamais un cadenas sur ce que vous avez déjà.</span><span lang="en">The core of every app is free and stays free. Paid options fund what actually costs us — never a padlock on what you already have.</span></p>
+            </div>
+          </article>
+          <article class="principle">
+            <span class="num">04</span>
+            <div>
+              <h3><span lang="fr">Vos données vous appartiennent</span><span lang="en">Your data is yours</span></h3>
+              <p><span lang="fr">Export ouvert, formats documentés, restauration sans compte. Partir doit être aussi simple qu'arriver.</span><span lang="en">Open export, documented formats, restore without an account. Leaving must be as easy as arriving.</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ LE STUDIO ═══ -->
+    <section class="section" id="activite" aria-labelledby="activite-title" style="padding-top:0">
+      <div class="container">
+        <div class="section-head">
+          <div class="reveal">
+            <p class="eyebrow"><span lang="fr">Le studio</span><span lang="en">The studio</span></p>
+            <h2 class="h2" id="activite-title"><span lang="fr">Un studio indépendant, trois applications.</span><span lang="en">One independent studio, three apps.</span></h2>
+          </div>
+        </div>
+        <div class="about">
+          <div class="about-text reveal">
+            <p><span lang="fr"><strong>Pixware Studio</strong> est un studio indépendant d'applications mobiles installé dans le sud de la France. Il conçoit, développe et édite des applications pour Android — iOS suivra — publiées sur Google Play sous le nom Pixware Studio, par une entreprise immatriculée en France.</span><span lang="en"><strong>Pixware Studio</strong> is an independent mobile-app studio based in the south of France. It designs, builds and publishes apps for Android — iOS will follow — released on Google Play under the Pixware Studio name, by a company registered in France.</span></p>
+            <p><span lang="fr">Trois applications sont en cours : un compagnon de fléchettes, un livre de cuisine qui se remplit tout seul, et un entraîneur de tables de multiplication pour les 7-9 ans. Trois sujets différents, une seule architecture : la base de données vit sur le téléphone, le serveur est optionnel.</span><span lang="en">Three apps are in progress: a darts companion, a cookbook that fills itself, and a times-tables coach for 7-to-9-year-olds. Three different subjects, one architecture: the database lives on the phone, the server is optional.</span></p>
+            <p><span lang="fr">Pas de levée de fonds, pas d'équipe marketing, pas de croissance à tout prix. Des outils soignés, utiles longtemps, et honnêtes sur ce qu'ils font de vos données.</span><span lang="en">No fundraising, no marketing team, no growth at any cost. Carefully made tools, useful for a long time, and honest about what they do with your data.</span></p>
+          </div>
+          <dl class="facts reveal" style="--i:1">
+            <div class="fact"><dt class="fact-k">Studio</dt><dd class="fact-v">Pixware Studio</dd></div>
+            <div class="fact"><dt class="fact-k"><span lang="fr">Implantation</span><span lang="en">Based in</span></dt><dd class="fact-v"><span lang="fr">Sud de la France</span><span lang="en">Southern France</span></dd></div>
+            <div class="fact"><dt class="fact-k"><span lang="fr">Plateformes</span><span lang="en">Platforms</span></dt><dd class="fact-v"><span lang="fr">Android · iOS à venir</span><span lang="en">Android · iOS coming</span></dd></div>
+            <div class="fact"><dt class="fact-k"><span lang="fr">Distribution</span><span lang="en">Distribution</span></dt><dd class="fact-v">Google Play</dd></div>
+            <div class="fact"><dt class="fact-k"><span lang="fr">Modèle</span><span lang="en">Model</span></dt><dd class="fact-v"><span lang="fr">Gratuit au cœur · sans publicité</span><span lang="en">Free core · no ads</span></dd></div>
+            <div class="fact"><dt class="fact-k"><span lang="fr">Données</span><span lang="en">Data</span></dt><dd class="fact-v"><span lang="fr">Sur votre appareil, serveur optionnel</span><span lang="en">On your device, server optional</span></dd></div>
+            <div class="fact"><dt class="fact-k">Contact</dt><dd class="fact-v"><a href="mailto:contact@pixware.app">contact@pixware.app</a></dd></div>
+            <div class="fact"><dt class="fact-k"><span lang="fr">Entreprise</span><span lang="en">Company</span></dt><dd class="fact-v"><a href="legal/mentions-legales.html"><span lang="fr">Informations légales →</span><span lang="en">Legal information →</span></a></dd></div>
+          </dl>
+        </div>
+        <div class="stats reveal" data-stagger>
+          <div class="stat"><div class="stat-n"><span data-count="3">0</span></div><div class="stat-l"><span lang="fr">applications en cours</span><span lang="en">apps in progress</span></div></div>
+          <div class="stat"><div class="stat-n"><span data-count="0">0</span></div><div class="stat-l"><span lang="fr">publicité</span><span lang="en">ads</span></div></div>
+          <div class="stat"><div class="stat-n"><span data-count="0">0</span></div><div class="stat-l"><span lang="fr">traqueur</span><span lang="en">trackers</span></div></div>
+          <div class="stat"><div class="stat-n"><span data-count="0">0</span></div><div class="stat-l"><span lang="fr">compte obligatoire</span><span lang="en">accounts required</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ APPS ═══ -->
+    <section class="section" id="apps" aria-labelledby="apps-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="reveal">
+            <p class="eyebrow">Applications</p>
+            <h2 class="h2" id="apps-title"><span lang="fr">Trois apps, une même colonne vertébrale.</span><span lang="en">Three apps, one backbone.</span></h2>
+          </div>
+          <p class="lead reveal" style="--i:1"><span lang="fr">Toutes gratuites au cœur, toutes utilisables sans compte, toutes en cours de publication sur Google Play.</span><span lang="en">All free at the core, all usable without an account, all on their way to Google Play.</span></p>
+        </div>
+        <div class="apps-grid reveal" data-stagger>
+          <article class="app-card tilt" style="--app:var(--dartrak)">
+            <div class="app-head">
+              <div class="app-icon"><picture><source srcset="assets/img/dartrak-192.webp" type="image/webp"><img src="assets/img/dartrak-192.png" alt="" width="84" height="84" loading="lazy"></picture></div>
+              <span class="tag">Sports</span>
+            </div>
+            <h3><a href="dartrak/">Dartrak</a></h3>
+            <p class="app-desc"><span lang="fr">Le compagnon fléchettes : huit modes de jeu, saisie vocale, statistiques et heatmap, bot d'entraînement — jouable sans connexion.</span><span lang="en">The darts companion: eight game modes, voice scoring, stats and heatmaps, a training bot — playable without a connection.</span></p>
+            <span class="pill"><i></i><span lang="fr">Sortie Google Play en préparation</span><span lang="en">Google Play launch in preparation</span></span>
+            <div class="app-links">
+              <a href="dartrak/"><span lang="fr">En savoir plus</span><span lang="en">Learn more</span></a>
+              <a lang="fr" href="dartrak/privacy-policy.fr.html">Confidentialité</a><a lang="en" href="dartrak/privacy-policy.en.html">Privacy</a>
+            </div>
+          </article>
+          <article class="app-card tilt" style="--app:var(--grimoire)">
+            <div class="app-head">
+              <div class="app-icon"><picture><source srcset="assets/img/grimoire-192.webp" type="image/webp"><img src="assets/img/grimoire-192.png" alt="" width="84" height="84" loading="lazy"></picture></div>
+              <span class="tag"><span lang="fr">Cuisine</span><span lang="en">Cooking</span></span>
+            </div>
+            <h3><a href="grimoire/">Grimoire</a></h3>
+            <p class="app-desc"><span lang="fr">Partagez un lien — reel, blog, n'importe quoi — la recette atterrit rangée et cherchable dans votre bibliothèque. Imports illimités et gratuits.</span><span lang="en">Share a link — a reel, a blog, anything — and the recipe lands in your library, sorted and searchable. Unlimited, free imports.</span></p>
+            <span class="pill"><i></i><span lang="fr">Bêta Android — publication à venir</span><span lang="en">Android beta — release coming</span></span>
+            <div class="app-links">
+              <a href="grimoire/"><span lang="fr">En savoir plus</span><span lang="en">Learn more</span></a>
+              <a lang="fr" href="grimoire/privacy-policy.fr.html">Confidentialité</a><a lang="en" href="grimoire/privacy-policy.en.html">Privacy</a>
+            </div>
+          </article>
+          <article class="app-card tilt" style="--app:var(--multiplico)">
+            <div class="app-head">
+              <div class="app-icon"><picture><source srcset="assets/img/multiplico-192.webp" type="image/webp"><img src="assets/img/multiplico-192.png" alt="" width="84" height="84" loading="lazy"></picture></div>
+              <span class="tag"><span lang="fr">Éducation</span><span lang="en">Education</span></span>
+            </div>
+            <h3><a href="multiplico/">Multiplico</a></h3>
+            <p class="app-desc"><span lang="fr">Les tables de multiplication pour les 7-9 ans : neuf jeux gratuits, répétition espacée, méthodes mnémotechniques, six langues. Sans compte, sans pub.</span><span lang="en">Times tables for ages 7-9: nine free games, spaced repetition, memory tricks, six languages. No account, no ads.</span></p>
+            <span class="pill"><i></i><span lang="fr">Sortie Google Play en préparation</span><span lang="en">Google Play launch in preparation</span></span>
+            <div class="app-links">
+              <a href="multiplico/"><span lang="fr">En savoir plus</span><span lang="en">Learn more</span></a>
+              <a lang="fr" href="multiplico/privacy-policy.fr.html">Confidentialité</a><a lang="en" href="multiplico/privacy-policy.en.html">Privacy</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ DOCUMENTS ═══ -->
+    <section class="section" id="documents" aria-labelledby="docs-title" style="padding-top:0">
+      <div class="container">
+        <div class="section-head">
+          <div class="reveal">
+            <p class="eyebrow"><span lang="fr">Transparence</span><span lang="en">Transparency</span></p>
+            <h2 class="h2" id="docs-title"><span lang="fr">Tout ce qu'on fait de vos données, écrit noir sur blanc.</span><span lang="en">Everything we do with your data, in writing.</span></h2>
+          </div>
+          <p class="lead reveal" style="--i:1"><span lang="fr">Chaque application a sa politique de confidentialité, publiée ici avant sa sortie. Le site lui-même n'utilise ni cookie ni mesure d'audience.</span><span lang="en">Every app has its own privacy policy, published here before release. The site itself uses no cookies and no analytics.</span></p>
+        </div>
+        <div class="docs-grid reveal" data-stagger>
+          <div class="docs-group" style="--app:var(--dartrak)">
+            <h3>Dartrak</h3>
+            <div class="doc-links">
+              <a href="dartrak/privacy-policy.fr.html"><span>Politique de confidentialité</span><span>FR</span></a>
+              <a href="dartrak/privacy-policy.en.html"><span>Privacy policy</span><span>EN</span></a>
+              <a href="dartrak/terms-of-service.fr.html"><span>Conditions d'utilisation</span><span>FR</span></a>
+              <a href="dartrak/terms-of-service.en.html"><span>Terms of service</span><span>EN</span></a>
+            </div>
+          </div>
+          <div class="docs-group" style="--app:var(--grimoire)">
+            <h3>Grimoire</h3>
+            <div class="doc-links">
+              <a href="grimoire/privacy-policy.fr.html"><span>Politique de confidentialité</span><span>FR</span></a>
+              <a href="grimoire/privacy-policy.en.html"><span>Privacy policy</span><span>EN</span></a>
+            </div>
+          </div>
+          <div class="docs-group" style="--app:var(--multiplico)">
+            <h3>Multiplico</h3>
+            <div class="doc-links">
+              <a href="multiplico/privacy-policy.fr.html"><span>Politique de confidentialité</span><span>FR</span></a>
+              <a href="multiplico/privacy-policy.en.html"><span>Privacy policy</span><span>EN</span></a>
+            </div>
+            <div class="doc-langs" aria-label="Autres langues / Other languages">
+              <a href="multiplico/privacy-policy.de.html" hreflang="de">DE</a>
+              <a href="multiplico/privacy-policy.es.html" hreflang="es">ES</a>
+              <a href="multiplico/privacy-policy.it.html" hreflang="it">IT</a>
+              <a href="multiplico/privacy-policy.pt.html" hreflang="pt">PT</a>
+            </div>
+          </div>
+        </div>
+        <div class="docs-grid reveal" style="margin-top:20px;grid-template-columns:1fr">
+          <div class="docs-group">
+            <h3>pixware.app</h3>
+            <div class="doc-links" style="grid-template-columns:1fr 1fr">
+              <a href="legal/mentions-legales.html"><span><span lang="fr">Mentions légales</span><span lang="en">Legal notice (French)</span></span><span>FR</span></a>
+              <a href="legal/confidentialite.html"><span><span lang="fr">Confidentialité du site</span><span lang="en">Website privacy policy</span></span><span>FR · EN</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section class="section" id="contact" aria-labelledby="contact-title" style="padding-top:0">
+      <div class="container">
+        <div class="section-head">
+          <div class="reveal">
+            <p class="eyebrow">Contact</p>
+            <h2 class="h2" id="contact-title"><span lang="fr">Une question, un bug, une demande RGPD ?</span><span lang="en">A question, a bug, a GDPR request?</span></h2>
+          </div>
+          <p class="lead reveal" style="--i:1"><span lang="fr">Trois adresses, un humain derrière chacune. Réponse sous quelques jours ouvrés.</span><span lang="en">Three addresses, one human behind each. Reply within a few business days.</span></p>
+        </div>
+        <div class="contact-grid reveal" data-stagger>
+          <a class="contact-card" href="mailto:contact@pixware.app">
+            <span class="contact-role"><span lang="fr">Général &amp; partenariats</span><span lang="en">General &amp; partnerships</span></span>
+            <span class="contact-mail">contact@pixware.app</span>
+            <span class="contact-note"><span lang="fr">Presse, collaborations, questions sur le studio.</span><span lang="en">Press, collaborations, questions about the studio.</span></span>
+          </a>
+          <a class="contact-card" href="mailto:support@pixware.app">
+            <span class="contact-role"><span lang="fr">Support des applications</span><span lang="en">App support</span></span>
+            <span class="contact-mail">support@pixware.app</span>
+            <span class="contact-note"><span lang="fr">Un bug, une suggestion, un problème d'achat — précisez l'application.</span><span lang="en">A bug, a suggestion, a purchase issue — name the app.</span></span>
+          </a>
+          <a class="contact-card" href="mailto:privacy@pixware.app">
+            <span class="contact-role"><span lang="fr">Données personnelles</span><span lang="en">Personal data</span></span>
+            <span class="contact-mail">privacy@pixware.app</span>
+            <span class="contact-note"><span lang="fr">Exercer vos droits RGPD : accès, rectification, effacement.</span><span lang="en">Exercise your GDPR rights: access, rectification, erasure.</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand reveal" aria-hidden="true"><div class="footer-giant">PIXWARE</div><div class="footer-studio"><span>Studio</span></div></div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Pixware Studio</h4>
+          <p><span lang="fr">Studio indépendant d'applications mobiles local-first, immatriculé en France.</span><span lang="en">Independent studio building local-first mobile apps, registered in France.</span></p>
+        </div>
+        <div class="footer-col"><h4>Apps</h4><ul><li><a href="dartrak/">Dartrak</a></li><li><a href="grimoire/">Grimoire</a></li><li><a href="multiplico/">Multiplico</a></li></ul></div>
+        <div class="footer-col"><h4>Documents</h4><ul>
+          <li><a href="legal/mentions-legales.html"><span lang="fr">Mentions légales</span><span lang="en">Legal notice</span></a></li>
+          <li><a href="legal/confidentialite.html"><span lang="fr">Confidentialité du site</span><span lang="en">Website privacy</span></a></li>
+          <li><a href="#documents"><span lang="fr">Politiques des apps</span><span lang="en">App policies</span></a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:contact@pixware.app">contact@pixware.app</a></li><li><a href="mailto:support@pixware.app">support@pixware.app</a></li><li><a href="mailto:privacy@pixware.app">privacy@pixware.app</a></li></ul></div>
+      </div>
+      <div class="footer-legal">
+        <span>© 2026 Pixware Studio · <a href="legal/mentions-legales.html"><span lang="fr">Mentions légales</span><span lang="en">Legal notice</span></a></span>
+        <span>France · <a href="https://pixware.app">pixware.app</a></span>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

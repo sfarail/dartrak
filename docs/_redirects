@@ -1,0 +1,13 @@
+# Anciennes URL Dartrak (GitHub Pages / in-app) → nouvel emplacement
+/legal/privacy-policy.fr.html  /dartrak/privacy-policy.fr.html  301
+/legal/privacy-policy.en.html  /dartrak/privacy-policy.en.html  301
+/legal/privacy-policy.fr.md    /dartrak/privacy-policy.fr.html  301
+/legal/privacy-policy.en.md    /dartrak/privacy-policy.en.html  301
+/privacy-policy.fr.md          /dartrak/privacy-policy.fr.html  301
+/privacy-policy.en.md          /dartrak/privacy-policy.en.html  301
+# Raccourcis
+/privacy                       /#documents                      302
+/legal                         /legal/mentions-legales.html     302
+/dartrak/privacy               /dartrak/privacy-policy.fr.html  302
+/grimoire/privacy              /grimoire/privacy-policy.fr.html 302
+/multiplico/privacy            /multiplico/privacy-policy.fr.html 302
